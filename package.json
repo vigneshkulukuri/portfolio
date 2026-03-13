@@ -2,7 +2,7 @@
   "name": "venkata-vignesh-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://vigneshvicky.github.io/portfolio",
+  "homepage": "https://vigneshkulukuri.github.io/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
