@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMail, HiOutlineDownload } from "react-icons/hi";
-const profileImg = "/MY image.png";
+const profileImg = `${import.meta.env.BASE_URL}myimage.png`;
 
 export default function Home({ id, onNavClick }) {
   const [profileOk, setProfileOk] = useState(true);
@@ -39,7 +39,7 @@ export default function Home({ id, onNavClick }) {
             <div className="flex flex-wrap items-center gap-3 sm:gap-4 pt-2">
               <a
                 className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-accent-blue to-accent-purple px-5 sm:px-6 py-2.5 text-sm font-medium shadow-neon hover:shadow-[0_0_40px_rgba(56,189,248,0.8)] transition-shadow"
-                href="/Vignesh_CV.pdf"
+                href={`${import.meta.env.BASE_URL}Vignesh_CV.pdf`}
                 download="Venkata-Ramachandra-Surya-Vignesh-CV.pdf"
               >
                 <HiOutlineDownload className="text-lg" />
