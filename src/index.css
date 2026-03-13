@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* Light theme variables */
+.light {
+  --bg-primary: #ffffff;
+  --bg-elevated: rgba(255, 255, 255, 0.9);
+  --bg-secondary: #f8fafc;
+  --text-primary: #000000;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --border-primary: #e2e8f0;
+  --border-secondary: #cbd5e1;
+  --accent-blue: #0ea5e9;
+  --accent-purple: #8b5cf6;
+  --card-bg: rgba(255, 255, 255, 0.8);
+  --nav-bg: rgba(255, 255, 255, 0.9);
+  --gradient-1: rgba(14, 165, 233, 0.15);
+  --gradient-2: rgba(139, 92, 246, 0.15);
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --neon-shadow: rgba(14, 165, 233, 0.3);
+}
+
+/* Dark theme variables */
+.dark {
+  --bg-primary: #020617;
+  --bg-elevated: rgba(15, 23, 42, 0.85);
+  --bg-secondary: #0f172a;
+  --text-primary: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border-primary: #334155;
+  --border-secondary: #475569;
+  --accent-blue: #38bdf8;
+  --accent-purple: #a855f7;
+  --card-bg: rgba(15, 23, 42, 0.8);
+  --nav-bg: rgba(5, 8, 22, 0.55);
+  --gradient-1: rgba(56, 189, 248, 0.25);
+  --gradient-2: rgba(168, 85, 247, 0.25);
+  --shadow-color: rgba(148, 163, 184, 0.35);
+  --neon-shadow: rgba(56, 189, 248, 0.35);
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  @apply antialiased;
+  background-image: radial-gradient(
+      circle at top,
+      var(--gradient-1),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom,
+      var(--gradient-2),
+      transparent 60%
+    );
+}
+
+.glass-card {
+  background: var(--card-bg);
+  border-color: var(--border-primary);
+  @apply backdrop-blur-xl rounded-2xl;
+  box-shadow: inset 0 0 20px var(--shadow-color);
+}
+
+.neon-border {
+  box-shadow: 0 0 20px var(--neon-shadow),
+    0 0 40px var(--accent-purple);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    120deg,
+    var(--accent-blue),
+    var(--accent-purple),
+    #f97316
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.4) transparent;
+}
+
