@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { FiArrowUpRight, FiGithub } from "react-icons/fi";
-const predictionImg = `${import.meta.env.BASE_URL}predctionmodel.jpeg`;
-const retailImg = `${import.meta.env.BASE_URL}salesdashboard.png`;
-const studentImg = `${import.meta.env.BASE_URL}studentacademic.png`;
+const predictionImg = "/predctionmodel.jpeg";
+const retailImg = "/salesdashboard.png";
+const studentImg = "/studentacademic.png";
 
 const projects = [
   {

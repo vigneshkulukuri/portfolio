@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { HiBadgeCheck } from "react-icons/hi";
-const powerBiImg = `${import.meta.env.BASE_URL}powerbi.png`;
-const nptelImg = `${import.meta.env.BASE_URL}nptel.png`;
-const responsiveImg = `${import.meta.env.BASE_URL}responsiveweb.png`;
+const powerBiImg = "/powerbi.png";
+const nptelImg = "/nptel.png";
+const responsiveImg = "/responsiveweb.png";
 
 const certifications = [
   {
